@@ -1,0 +1,3 @@
+<%= @locale %>:
+  countries:<% @countries.each do |country| %>
+    <%= country[:code] %>: "<%= country[:name] %>"<% end %>
